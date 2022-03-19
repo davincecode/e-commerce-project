@@ -9,7 +9,7 @@ const index = () => {
         <NavContainer>
           <LeftGrid>Left Collective</LeftGrid>
           <RigthGrid>
-            <ul className="flex">
+            <ul>
               <li href="/about" text="ABOUT">
                 ABOUT
               </li>

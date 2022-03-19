@@ -27,5 +27,5 @@ export const LeftGrid = styled.div`
   ${tw`text-4xl font-millerLight`}
 `
 export const RigthGrid = styled.div`
-  ${tw`flex flex-col text-xl font-millerLight`}
+  ${tw`flex flex-row text-xl font-millerLight`}
 `
