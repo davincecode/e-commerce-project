@@ -9,10 +9,8 @@ const index = () => {
         <NavContainer>
           <LeftGrid>Left Collective</LeftGrid>
           <RigthGrid>
-            <ul>
-              <li href="/about" text="ABOUT">
-                ABOUT
-              </li>
+            <ul className="text-3xl">
+              <li href="/about">ABOUT</li>
               <li href="/latestwork">LATEST WORK</li>
               <li href="/shop">SHOP</li>
               <li href="/contact">CONTACT</li>
