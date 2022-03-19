@@ -18,5 +18,5 @@ module.exports = {
     },
   },
   // darkMode: "class",
-  // plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [require("tailwind-scrollbar-hide")],
 }

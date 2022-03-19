@@ -1,20 +1,33 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
-import { NavContainer, Wrapper, LeftGrid, RigthGrid } from "Styles/GlobalStyles"
+import {
+  NavContainer,
+  Wrapper,
+  LeftGrid,
+  RigthGrid,
+  NavLinks,
+  MobileLinks,
+} from "Styles/GlobalStyles"
 
 const index = () => {
   return (
     <>
       <Wrapper>
         <NavContainer>
-          <LeftGrid>Left Collective</LeftGrid>
+          <LeftGrid>LEFT COLLECTIVE</LeftGrid>
           <RigthGrid>
-            <ul className="text-3xl">
-              <li href="/about">ABOUT</li>
-              <li href="/latestwork">LATEST WORK</li>
-              <li href="/shop">SHOP</li>
-              <li href="/contact">CONTACT</li>
-            </ul>
+            <NavLinks>
+              <a href="/about">ABOUT</a>
+              <a href="/latestwork">LATEST WORK</a>
+              <a href="/shop">SHOP</a>
+              <a href="/contact">CONTACT</a>
+            </NavLinks>
+            <MobileLinks>
+              <a href="/about">ABOUT</a>
+              <a href="/latestwork">LATEST WORK</a>
+              <a href="/shop">SHOP</a>
+              <a href="/contact">CONTACT</a>
+            </MobileLinks>
           </RigthGrid>
         </NavContainer>
       </Wrapper>
