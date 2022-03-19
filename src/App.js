@@ -1,12 +1,17 @@
-import "./App.css"
+import React from "react"
+import { MainContainer } from "./Styles/GlobalStyles"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
+import "./tailwind.css"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="text-3xl font-bold underline">Hello world! Wazzup!</h1>
-      </header>
-    </div>
+    <>
+      <MainContainer>
+        <Navbar />
+        <Hero />
+      </MainContainer>
+    </>
   )
 }
 

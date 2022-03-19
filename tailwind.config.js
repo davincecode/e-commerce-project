@@ -1,9 +1,22 @@
+// const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        miller: "miller, cursive",
+        millerLight: "miller-light, cursive",
+        millerItalic: "miller-italic, cursive",
+        millerItalicLight: "miller-italic-light, cursive",
+        Grotesk: "Grotesk-Regular, san-serif",
+        GroteskLight: "Grotesk-light, san-serif",
+      },
+    },
   },
-  plugins: [],
+  // darkMode: "class",
+  // plugins: [require("tailwind-scrollbar-hide")],
 }
