@@ -25,10 +25,10 @@ export const RigthNav = styled.div`
 
 // Hero Component
 export const HeroContainer = styled.div`
-  ${tw`w-full p-16 flex flex-col bg-[#eeede8]`}
+  ${tw`w-full px-8 py-16 flex flex-col bg-[#eeede8]`}
 `
 export const HeroElements = styled.div`
-  ${tw`flex flex-col items-center content-center justify-center md:flex-row space-x-9`}
+  ${tw`flex flex-col items-center content-center justify-center md:flex-row md:space-x-9`}
 `
 // Wrappers
 export const Wrapper = styled.div`
@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
 
 // Feature Components
 export const FeatureContainer = styled.div`
-  ${tw`w-full flex justify-center items-center bg-[#a19183] h-64`}
+  ${tw`w-full flex justify-center items-center bg-[#a09083] h-64`}
 `
 
 // Work Components
@@ -46,6 +46,16 @@ export const WorkContainer = styled.div`
 `
 
 // Textarea
-export const TextareaOne = styled.div`
-  ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-48 bg-[#e0e4e3]`}
+export const TextBoxWarm = styled.div`
+  ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-72 bg-[#a19183]`}
+`
+export const TextBoxCool = styled.div`
+  ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-72 bg-[#e0e4e3]`}
+`
+
+// Flexbox Components
+
+// Button
+export const Button = styled.div`
+  ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-white bg-black font-millerLight`}
 `

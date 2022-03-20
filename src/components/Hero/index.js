@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react"
-import { HeroContainer, HeroElements } from "Styles/GlobalStyles"
+import { HeroContainer, HeroElements, Button } from "Styles/GlobalStyles"
 
 const index = () => {
   return (
@@ -8,14 +8,15 @@ const index = () => {
       <HeroContainer>
         <HeroElements>
           <div className="">
-            <img className="flex w-[450px]" src="/images/pillow.jpg" />
+            <img className="w-[450px]" src="/images/pillow.jpg" />
           </div>
-          <div className="flex-wrap items-center justify-center py-4 mt-12 text-2xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose ">
+          <div className="flex-wrap items-center justify-center w-full py-4 mt-12 text-3xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose ">
             Full-stack web designs focused on{" "}
             <div>
               <span className=" font-millerItalic">Simplicity</span> and
               <span className=" font-millerItalic"> Function.</span>
             </div>
+            <Button>LEARN MORE</Button>
           </div>
         </HeroElements>
       </HeroContainer>
