@@ -12,7 +12,7 @@ export const SectionContainer = styled.div`
 
 // Navbar Component
 export const NavContainer = styled.div`
-  ${tw`flex flex-col w-screen p-10 mx-auto bg-gray-100 md:justify-between md:flex-row`}
+  ${tw`fixed flex flex-col w-screen p-10 mx-auto bg-gray-100 md:justify-between md:flex-row`}
 `
 export const NavLinks = styled.div`
   ${tw`items-center justify-center hidden space-x-16 tracking-widest md:flex`}

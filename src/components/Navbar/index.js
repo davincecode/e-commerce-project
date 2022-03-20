@@ -14,7 +14,7 @@ const index = () => {
     <>
       <Wrapper>
         <NavContainer>
-          <LeftGrid>LEFT COLLECTIVE</LeftGrid>
+          <LeftGrid>XVIEW COLLECTIVE</LeftGrid>
           <RigthGrid>
             <NavLinks>
               <a href="/about">ABOUT</a>
