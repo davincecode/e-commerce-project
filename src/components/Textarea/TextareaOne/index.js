@@ -1,5 +1,5 @@
 import React from "react"
-import { TextareaOne } from "styles/GlobalStyles"
+import { TextareaOne } from "Styles/GlobalStyles"
 
 export default function index() {
   return (

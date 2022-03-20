@@ -3,7 +3,7 @@ import tw from "twin.macro"
 
 // Main Containers
 export const MainContainer = styled.div`
-  ${tw`w-screen h-screen bg-gray-600`}
+  ${tw`w-screen`}
 `
 
 export const SectionContainer = styled.div`
@@ -15,18 +15,18 @@ export const NavContainer = styled.div`
   ${tw`flex flex-col w-screen p-10 mx-auto bg-gray-100 md:justify-between md:flex-row`}
 `
 export const NavLinks = styled.div`
-  ${tw`md:flex hidden space-x-16 justify-center items-center tracking-widest`}
+  ${tw`items-center justify-center hidden space-x-16 tracking-widest md:flex`}
 `
 export const MobileLinks = styled.div`
-  ${tw`flex flex-col md:hidden justify-center items-center tracking-widest`}
+  ${tw`flex flex-col items-center justify-center tracking-widest md:hidden`}
 `
 
 // Hero Component
 export const HeroContainer = styled.div`
-  ${tw`relative w-full`}
+  ${tw`w-screen`}
 `
 export const HeroElements = styled.div`
-  ${tw``}
+  ${tw`object-cover`}
 `
 
 // Wrappers
@@ -43,5 +43,5 @@ export const RigthGrid = styled.div`
 `
 // Textarea
 export const TextareaOne = styled.div`
-  ${tw`flex flex-row text-sm font-millerLight`}
+  ${tw`flex flex-row text-sm font-millerLight bg-[#a19183]`}
 `

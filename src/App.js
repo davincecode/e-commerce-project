@@ -2,7 +2,8 @@ import React from "react"
 import { MainContainer } from "Styles/GlobalStyles"
 import Navbar from "components/Navbar"
 import Hero from "components/Hero"
-import "tailwind.css"
+import Textarea from "components/Textarea/TextareaOne"
+import "index.css"
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <MainContainer>
         <Navbar />
         <Hero />
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <Textarea />
       </MainContainer>
     </>
   )
