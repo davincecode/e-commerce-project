@@ -18,6 +18,10 @@ const index = () => {
             </div>
             <Button>LEARN MORE</Button>
           </div>
+          {/* <img
+            className="w-[450px] absolute right-8 top-2/4"
+            src="/images/off-image.jpg"
+          /> */}
         </HeroElements>
       </HeroContainer>
     </>

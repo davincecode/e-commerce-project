@@ -30,10 +30,6 @@ export const HeroContainer = styled.div`
 export const HeroElements = styled.div`
   ${tw`flex flex-col items-center content-center justify-center md:flex-row md:space-x-9`}
 `
-// Wrappers
-export const Wrapper = styled.div`
-  ${tw`w-full py-32`}
-`
 
 // Feature Components
 export const FeatureContainer = styled.div`
@@ -41,9 +37,9 @@ export const FeatureContainer = styled.div`
 `
 
 // Work Components
-export const WorkContainer = styled.div`
-  ${tw`grid grid-rows-1 gap-8 md:grid-cols-2 px-[450px]`}
-`
+// export const WorkContainer = styled.div`
+//   ${tw`grid grid-rows-1 gap-8 md:grid-cols-2 px-[450px]`}
+// `
 
 // Textarea
 export const TextBoxWarm = styled.div`
@@ -53,7 +49,19 @@ export const TextBoxCool = styled.div`
   ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-72 bg-[#e0e4e3]`}
 `
 
-// Flexbox Components
+// 1 x 2 Box Wrappers
+export const ContainerWrapper = styled.div`
+  ${tw`flex flex-col items-center justify-center w-full h-full`}
+`
+export const WorkBoxWrapper = styled.div`
+  ${tw`flex flex-col items-center justify-center w-1/2 h-full gap-4 md:flex-row`}
+`
+export const WorkLeftBox = styled.div`
+  ${tw`flex object-fill w-full h-full`}
+`
+export const WorkRightBox = styled.div`
+  ${tw`flex flex-col object-fill w-full h-full gap-4 p-5`}
+`
 
 // Button
 export const Button = styled.div`
