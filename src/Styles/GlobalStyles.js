@@ -28,7 +28,7 @@ export const HeroContainer = styled.div`
   ${tw`w-full p-16 flex flex-col bg-[#eeede8]`}
 `
 export const HeroElements = styled.div`
-  ${tw`flex items-center content-center justify-center space-x-9 `}
+  ${tw`flex flex-col items-center content-center justify-center md:flex-row space-x-9`}
 `
 // Wrappers
 export const Wrapper = styled.div`
@@ -47,5 +47,5 @@ export const WorkContainer = styled.div`
 
 // Textarea
 export const TextareaOne = styled.div`
-  ${tw`flex flex-row text-sm font-millerLight bg-[#a19183]`}
+  ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-48 bg-[#e0e4e3]`}
 `

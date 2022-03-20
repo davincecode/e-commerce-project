@@ -10,13 +10,12 @@ const index = () => {
           <div className="">
             <img className="flex w-[450px]" src="/images/pillow.jpg" />
           </div>
-          <div>
-            Full-stack web designs
-            <br />
-            focused on <span className=" font-millerItalic">
-              Simplicity
-            </span>{" "}
-            and<span className=" font-millerItalic"> Function.</span>
+          <div className="flex-wrap items-center justify-center py-4 mt-12 text-2xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose ">
+            Full-stack web designs focused on{" "}
+            <div>
+              <span className=" font-millerItalic">Simplicity</span> and
+              <span className=" font-millerItalic"> Function.</span>
+            </div>
           </div>
         </HeroElements>
       </HeroContainer>
