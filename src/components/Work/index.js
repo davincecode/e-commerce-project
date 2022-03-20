@@ -5,22 +5,30 @@ import {
   WorkRightBox,
   ContainerWrapper,
   WorkBoxWrapper,
+  CenteredTitle,
+  DivColumn,
+  SectionTitle,
 } from "Styles/GlobalStyles"
 
 const index = () => {
   return (
     <>
       <ContainerWrapper>
-        <div className="flex items-center justify-center mb-10 text-3xl font-millerLight">
-          Recent Work
-        </div>
+        <SectionTitle>EXPERIENCE</SectionTitle>
         <WorkBoxWrapper>
           <WorkLeftBox>
-            <img src="/images/pillow.jpg" />
+            <CenteredTitle>WEBDESIGN AND DEVELOPMENT</CenteredTitle>
+            <img src="/images/fine-image.jpg" />
           </WorkLeftBox>
           <WorkRightBox>
-            <img src="/images/min-hero.jpg" />
-            <img src="/images/min-hero.jpg" />
+            <DivColumn>
+              <CenteredTitle>CREATIVE DIRECTION</CenteredTitle>
+              <img src="/images/chair.jpg" />
+            </DivColumn>
+            <DivColumn>
+              <CenteredTitle>PHOTOGRAPHY</CenteredTitle>
+              <img src="/images/window.jpg" />
+            </DivColumn>
           </WorkRightBox>
         </WorkBoxWrapper>
       </ContainerWrapper>

@@ -54,13 +54,22 @@ export const ContainerWrapper = styled.div`
   ${tw`flex flex-col items-center justify-center w-full h-full`}
 `
 export const WorkBoxWrapper = styled.div`
-  ${tw`flex flex-col items-center justify-center w-1/2 h-full gap-4 md:flex-row`}
+  ${tw`flex flex-col items-center justify-center h-full p-8 md:w-3/5 md:flex-row`}
 `
 export const WorkLeftBox = styled.div`
-  ${tw`flex object-fill w-full h-full`}
+  ${tw`relative flex items-center justify-center object-fill w-full h-full`}
 `
 export const WorkRightBox = styled.div`
-  ${tw`flex flex-col object-fill w-full h-full gap-4 p-5`}
+  ${tw`relative flex flex-col items-center justify-center object-fill w-full h-full gap-4 mt-4 md:mt-0 md:p-5`}
+`
+export const CenteredTitle = styled.div`
+  ${tw`absolute text-sm top-1/2 bg-[#a09083] text-white font-millerLight p-4`}
+`
+export const SectionTitle = styled.div`
+  ${tw`flex items-center justify-center mt-32 text-3xl font-millerLight`}
+`
+export const DivColumn = styled.div`
+  ${tw`relative flex items-center justify-center`}
 `
 
 // Button
