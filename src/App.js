@@ -1,19 +1,22 @@
 import React from "react"
-import { MainContainer } from "Styles/GlobalStyles"
 import Navbar from "components/Navbar"
 import Hero from "components/Hero"
+import Features from "components/Features"
 import Textarea from "components/Textarea/TextareaOne"
+import Work from "components/Work"
+import { BodyContainer } from "../src/Styles/GlobalStyles"
 import "index.css"
 
 const App = () => {
   return (
     <>
-      <MainContainer>
+      <BodyContainer>
         <Navbar />
         <Hero />
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <Features />
+        <Work />
         <Textarea />
-      </MainContainer>
+      </BodyContainer>
     </>
   )
 }
