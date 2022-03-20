@@ -1,14 +1,20 @@
 import React from "react"
-import { TextBoxWarm } from "Styles/GlobalStyles"
+import {
+  SectionBGwarm,
+  SectionText,
+  SectionContainer,
+} from "Styles/GlobalStyles"
 
 export default function index() {
   return (
     <>
-      <TextBoxWarm id="#intro" className="z-50">
-        <h1 className="flex p-8 text-3xl leading-relaxed tracking-wide text-white font-millerLight">
-          Full-stack web design & planning based in Alberta, Canada.
-        </h1>
-      </TextBoxWarm>
+      <SectionBGwarm>
+        <SectionContainer>
+          <SectionText>
+            Full-stack web design & planning based in Alberta, Canada.
+          </SectionText>
+        </SectionContainer>
+      </SectionBGwarm>
     </>
   )
 }

@@ -1,12 +1,20 @@
+/* DAVINCECODE TW+MACRO LIB */
+
 import styled from "styled-components"
 import tw from "twin.macro"
 
-// Content Container
+/////////////////////////// CONTENT CONTAINERS ///////////////////////////
 export const BodyContainer = styled.div`
-  ${tw`flex flex-col w-screen`}
+  ${tw``}
+`
+export const SectionBGcool = styled.div`
+  ${tw`bg-[#e0e4e3]`}
+`
+export const SectionBGwarm = styled.div`
+  ${tw`bg-[#a19183]`}
 `
 
-// Navbar Component
+///////////////////////////// NAV COMPONENTS /////////////////////////////
 export const NavContainer = styled.div`
   ${tw`flex flex-col w-full p-10 mx-auto bg-white md:justify-between md:flex-row`}
 `
@@ -23,7 +31,7 @@ export const RigthNav = styled.div`
   ${tw`flex flex-row text-sm font-millerLight`}
 `
 
-// Hero Component
+///////////////////////////// HERO COMPONENTS /////////////////////////////
 export const HeroContainer = styled.div`
   ${tw`w-full px-8 py-16 flex flex-col bg-[#eeede8]`}
 `
@@ -31,27 +39,14 @@ export const HeroElements = styled.div`
   ${tw`flex flex-col items-center content-center justify-center md:flex-row md:space-x-9`}
 `
 
-// Feature Components
+///////////////////////////// FEATURE COMPONENTS /////////////////////////////
 export const FeatureContainer = styled.div`
   ${tw`w-full flex justify-center items-center bg-[#a09083] h-64`}
 `
 
-// Work Components
-// export const WorkContainer = styled.div`
-//   ${tw`grid grid-rows-1 gap-8 md:grid-cols-2 px-[450px]`}
-// `
-
-// Textarea
-export const TextBoxWarm = styled.div`
-  ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-72 bg-[#a19183]`}
-`
-export const TextBoxCool = styled.div`
-  ${tw`flex flex-row justify-center items-center text-sm font-millerLight h-72 bg-[#e0e4e3]`}
-`
-
-// 1 x 2 Box Wrappers
+///////////////////////////// 1 x 2 Box Wrappers /////////////////////////////
 export const ContainerWrapper = styled.div`
-  ${tw`flex flex-col items-center justify-center w-full h-full`}
+  ${tw`flex flex-col items-center justify-center w-full h-full md:p-12`}
 `
 export const WorkBoxWrapper = styled.div`
   ${tw`flex flex-col items-center justify-center h-full p-8 md:w-3/5 md:flex-row`}
@@ -65,14 +60,23 @@ export const WorkRightBox = styled.div`
 export const CenteredTitle = styled.div`
   ${tw`absolute text-sm top-1/2 bg-[#a09083] text-white font-millerLight p-4`}
 `
-export const SectionTitle = styled.div`
-  ${tw`flex items-center justify-center mt-32 text-3xl font-millerLight`}
+
+////////////////////////////////// SECTIONS //////////////////////////////////
+export const SectionContainer = styled.div`
+  ${tw`w-full h-96 justify-center items-center flex`}
 `
+export const SectionTitle = styled.div`
+  ${tw`flex items-center justify-center mt-8 text-3xl font-millerLight`}
+`
+export const SectionText = styled.div`
+  ${tw`flex p-8 text-3xl leading-relaxed tracking-wide text-white font-millerLight`}
+`
+//this requires CenteredTitle
 export const DivColumn = styled.div`
   ${tw`relative flex items-center justify-center`}
 `
 
-// Button
+//////////////////////////////////// BUTTONS //////////////////////////////////
 export const Button = styled.div`
   ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-white bg-black font-millerLight`}
 `

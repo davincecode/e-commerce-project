@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "components/Navbar"
 import Hero from "components/Hero"
 import TextareaOne from "components/TextareaOne"
-import TextareaTwo from "components/TextareaTwo"
+import About from "components/About"
 import Work from "components/Work"
 import { BodyContainer } from "../src/Styles/GlobalStyles"
 import "index.css"
@@ -15,7 +15,7 @@ const App = () => {
         <Hero />
         <TextareaOne />
         <Work />
-        <TextareaTwo />
+        <About />
       </BodyContainer>
     </>
   )
