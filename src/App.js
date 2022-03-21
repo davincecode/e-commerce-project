@@ -12,7 +12,7 @@ import "index.css"
 
 const App = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 3000 })
   }, [])
   return (
     <>

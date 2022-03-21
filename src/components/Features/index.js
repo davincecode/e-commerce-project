@@ -1,10 +1,8 @@
 import React from "react"
-import { WorkLeftBox, CenteredTitle } from "Styles/GlobalStyles"
+import { TextANoBG, TextWhite } from "Styles/GlobalStyles"
 
 export default function index() {
   const styles = {
-    color: "red",
-    fontSize: "1rem",
     backgroundImage: "url('/images/house.jpg')",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
@@ -16,9 +14,12 @@ export default function index() {
   return (
     <>
       <div style={styles}>
-        <WorkLeftBox>
-          <CenteredTitle>WEBDESIGN AND DEVELOPMENT</CenteredTitle>
-        </WorkLeftBox>
+        <TextANoBG>
+          <TextWhite>
+            CREATING simplicity and positivity through thoughtfully DESIGNED
+            SPACES
+          </TextWhite>
+        </TextANoBG>
       </div>
     </>
   )

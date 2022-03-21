@@ -16,16 +16,16 @@ const index = () => {
       <ContainerWrapper>
         <SectionTitle>EXPERIENCE</SectionTitle>
         <WorkBoxWrapper>
-          <WorkLeftBox>
+          <WorkLeftBox data-aos="zoom-in">
             <CenteredTitle>WEBDESIGN AND DEVELOPMENT</CenteredTitle>
             <img src="/images/fine-image.jpg" />
           </WorkLeftBox>
           <WorkRightBox>
-            <DivColumn>
+            <DivColumn data-aos="zoom-in">
               <CenteredTitle>CREATIVE DIRECTION</CenteredTitle>
               <img src="/images/chair.jpg" />
             </DivColumn>
-            <DivColumn>
+            <DivColumn data-aos="zoom-in">
               <CenteredTitle>PHOTOGRAPHY</CenteredTitle>
               <img src="/images/window.jpg" />
             </DivColumn>

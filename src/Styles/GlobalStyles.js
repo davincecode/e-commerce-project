@@ -90,3 +90,9 @@ export const TextAWBG = styled.div`
 export const SmoothRoll = styled.div`
   ${tw``}
 `
+export const TextANoBG = styled.div`
+  ${tw`relative flex items-center justify-center object-fill w-full h-full`}
+`
+export const TextWhite = styled.div`
+  ${tw`absolute text-4xl text-white w-1/2 text-center tracking-wider leading-loose font-millerLight p-4`}
+`

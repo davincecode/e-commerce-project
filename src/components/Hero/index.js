@@ -6,7 +6,7 @@ export default function Index() {
     <>
       <HeroContainer>
         <HeroElements>
-          <div className="" data-aos="zoom-in">
+          <div className="">
             <img className="w-[450px]" src="/images/pillow.jpg" />
           </div>
           <div className="flex-wrap items-center justify-center w-full py-4 mt-12 text-3xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose ">
