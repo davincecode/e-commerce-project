@@ -10,56 +10,56 @@ export default function index() {
           <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
             <div className="flex flex-wrap -m-1 md:-m-2">
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full p-1 md:p-2">
+                <div className="w-full p-1 md:p-2" data-aos="zoom-in">
                   <img
                     alt="gallery"
                     className="block object-cover object-center w-full h-full rounded-lg"
-                    src="/images/chair.jpg"
+                    src="/images/bath.jpg"
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full p-1 md:p-2">
+                <div className="w-full p-1 md:p-2" data-aos="zoom-in">
                   <img
                     alt="gallery"
                     className="block object-cover object-center w-full h-full rounded-lg"
-                    src="/images/fine-image.jpg"
+                    src="/images/flower.jpg"
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full p-1 md:p-2">
+                <div className="w-full p-1 md:p-2" data-aos="zoom-in">
                   <img
                     alt="gallery"
                     className="block object-cover object-center w-full h-full rounded-lg"
-                    src="/images/pillow.jpg"
+                    src="/images/bed.jpg"
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full p-1 md:p-2">
+                <div className="w-full p-1 md:p-2" data-aos="zoom-in">
                   <img
                     alt="gallery"
                     className="block object-cover object-center w-full h-full rounded-lg"
-                    src="/images/comfort.jpg"
+                    src="/images/book.jpg"
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full p-1 md:p-2">
+                <div className="w-full p-1 md:p-2" data-aos="zoom-in">
                   <img
                     alt="gallery"
                     className="block object-cover object-center w-full h-full rounded-lg"
-                    src="/images/motor.jpg"
+                    src="/images/light.jpg"
                   />
                 </div>
               </div>
               <div className="flex flex-wrap w-1/3">
-                <div className="w-full p-1 md:p-2">
+                <div className="w-full p-1 md:p-2" data-aos="zoom-in">
                   <img
                     alt="gallery"
                     className="block object-cover object-center w-full h-full rounded-lg"
-                    src="/images/about-chair.jpg"
+                    src="/images/vase.jpg"
                   />
                 </div>
               </div>
