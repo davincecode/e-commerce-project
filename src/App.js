@@ -14,9 +14,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <TextareaOne />
-      <Features />
       <Work />
       <About />
+      <Features />
       <Projects />
     </>
   )
