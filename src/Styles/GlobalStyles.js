@@ -14,7 +14,7 @@ export const SectionBGwarm = styled.div`
   ${tw`bg-[#a19183]`}
 `
 export const ParallaxBG = styled.div`
-  ${tw`flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover `}// custom-img
+  ${tw`w-full h-screen object-cover bg-scroll `}
 `
 ///////////////////////////// NAV COMPONENTS /////////////////////////////
 export const NavContainer = styled.div`
@@ -86,4 +86,7 @@ export const Button = styled.div`
 //////////////////////////////////// TEXTAREA //////////////////////////////////
 export const TextAWBG = styled.div`
   ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-black bg-white font-millerLight`}
+`
+export const SmoothRoll = styled.div`
+  ${tw``}
 `
