@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react"
+import { Button } from "Styles/GlobalStyles"
 
 export default function index() {
   return (
@@ -10,22 +11,21 @@ export default function index() {
             <li className="w-1/2 md:w-1/3 lg:w-1/3">
               <div className="text-center">
                 <h2 className="mb-4 text-white uppercase text-md font-millerLight">
-                  Components
+                  SUBSCRIBE
                 </h2>
-                <ul>
-                  <li className="mb-4 tracking-normal font-GroteskLight">
-                    <a href="#">Elements</a>
-                  </li>
-                  <li className="mb-4 tracking-normal font-GroteskLight">
-                    <a href="#">Forms</a>
-                  </li>
-                  <li className="mb-4 tracking-normal font-GroteskLight">
-                    <a href="#">Commerces</a>
-                  </li>
-                  <li className="mb-4 tracking-normal font-GroteskLight">
-                    <a href="#">Navigation</a>
-                  </li>
-                </ul>
+                <p className=" font-GroteskLight">
+                  Join our mailing list to be the first to hear about our
+                  promotions, checkout out latest project reveals and favourite
+                  products too!
+                </p>
+                <input
+                  type="text"
+                  className="p-4 mt-4 font-GroteskLight"
+                  placeholder="Email Address"
+                />
+                <div className="flex items-center justify-center ">
+                  <Button>SIGNUP</Button>
+                </div>
               </div>
             </li>
             <li className="w-1/2 md:w-1/3 lg:w-1/3">
