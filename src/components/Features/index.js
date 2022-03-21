@@ -9,7 +9,7 @@ import {
 
 export default function index() {
   const styles = {
-    backgroundImage: "url('/images/house.jpg')",
+    backgroundImage: "url('/images/art.jpg')",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
     backgroundPosition: "center",

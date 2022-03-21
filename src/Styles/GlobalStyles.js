@@ -60,7 +60,7 @@ export const FeatureContainer = styled.div`
 
 ///////////////////////////// 1 x 2 Box Wrappers /////////////////////////////
 export const ContainerWrapper = styled.div`
-  ${tw`flex flex-col items-center justify-center w-full h-full md:p-12`}
+  ${tw`flex flex-col items-center justify-center w-full h-full md:p-12 mb-5`}
 `
 export const WorkBoxWrapper = styled.div`
   ${tw`flex flex-col items-center justify-center h-full p-8 md:w-3/5 md:flex-row`}
@@ -80,7 +80,7 @@ export const SectionContainer = styled.div`
   ${tw`flex items-center justify-center w-full h-96`}
 `
 export const SectionTitle = styled.div`
-  ${tw`flex items-center justify-center mt-8 text-3xl font-millerLight`}
+  ${tw`flex items-center justify-center mt-16 text-3xl font-millerLight`}
 `
 export const SectionText = styled.div`
   ${tw`flex p-8 text-3xl leading-relaxed tracking-wide text-white font-millerLight`}
