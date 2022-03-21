@@ -86,10 +86,10 @@ export const SectionH1 = styled.div`
   ${tw`flex p-8 text-3xl leading-relaxed tracking-wide text-white font-millerLight`}
 `
 export const SectionH2 = styled.div`
-  ${tw`flex p-8 text-2xl md:text-3xl md:tracking-wide md:leading-loose text-white font-millerLight`}
+  ${tw`flex md:p-8 text-2xl text-center md:text-3xl md:tracking-wide md:leading-loose text-white font-millerLight`}
 `
 export const SectionPadding = styled.div`
-  ${tw`p-8 md:p-24 w-3/4`}
+  ${tw` py-20 md:p-24 w-3/4`}
 `
 //this requires CenteredTitle
 export const DivColumn = styled.div`
