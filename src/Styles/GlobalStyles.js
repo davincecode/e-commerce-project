@@ -1,10 +1,10 @@
-/* DAVINCECODE TW+MACRO LIB */
+/* DAVINCECODE LIB */
 
 import styled from "styled-components"
 import tw from "twin.macro"
 
 /////////////////////////// CONTENT CONTAINERS ///////////////////////////
-export const BodyContainer = styled.div`
+export const FullContainer = styled.div`
   ${tw``}
 `
 export const SectionBGcool = styled.div`
@@ -13,7 +13,9 @@ export const SectionBGcool = styled.div`
 export const SectionBGwarm = styled.div`
   ${tw`bg-[#a19183]`}
 `
-
+export const ParallaxBG = styled.div`
+  ${tw`flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover `}// custom-img
+`
 ///////////////////////////// NAV COMPONENTS /////////////////////////////
 export const NavContainer = styled.div`
   ${tw`flex flex-col w-full p-10 mx-auto bg-white md:justify-between md:flex-row`}
@@ -63,7 +65,7 @@ export const CenteredTitle = styled.div`
 
 ////////////////////////////////// SECTIONS //////////////////////////////////
 export const SectionContainer = styled.div`
-  ${tw`w-full h-96 justify-center items-center flex`}
+  ${tw`flex items-center justify-center w-full h-96`}
 `
 export const SectionTitle = styled.div`
   ${tw`flex items-center justify-center mt-8 text-3xl font-millerLight`}
@@ -79,4 +81,9 @@ export const DivColumn = styled.div`
 //////////////////////////////////// BUTTONS //////////////////////////////////
 export const Button = styled.div`
   ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-white bg-black font-millerLight`}
+`
+
+//////////////////////////////////// TEXTAREA //////////////////////////////////
+export const TextAWBG = styled.div`
+  ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-black bg-white font-millerLight`}
 `
