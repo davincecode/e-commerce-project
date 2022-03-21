@@ -6,6 +6,7 @@ import About from "components/About"
 import Work from "components/Work"
 import Projects from "components/Projects"
 import Features from "components/Features"
+import Footers from "components/Footers"
 import "aos/dist/aos.css"
 import Aos from "aos"
 import "index.css"
@@ -23,6 +24,7 @@ const App = () => {
       <About />
       <Features />
       <Projects />
+      <Footers />
     </>
   )
 }
