@@ -1,5 +1,11 @@
 import React from "react"
-import { TextANoBG, TextWhite } from "Styles/GlobalStyles"
+import {
+  WrapperTwo,
+  SectionTextWhite,
+  Button,
+  WrapperOne,
+  ItemCenter,
+} from "Styles/GlobalStyles"
 
 export default function index() {
   const styles = {
@@ -14,12 +20,19 @@ export default function index() {
   return (
     <>
       <div style={styles}>
-        <TextANoBG>
-          <TextWhite>
-            CREATING simplicity and positivity through thoughtfully DESIGNED
-            SPACES
-          </TextWhite>
-        </TextANoBG>
+        <WrapperOne>
+          <WrapperTwo>
+            <SectionTextWhite>
+              CREATING simplicity and positivity through thoughtfully DESIGNED
+              SPACES
+              <ItemCenter>
+                <a href="#one">
+                  <Button>LEARN MORE</Button>
+                </a>
+              </ItemCenter>
+            </SectionTextWhite>
+          </WrapperTwo>
+        </WrapperOne>
       </div>
     </>
   )

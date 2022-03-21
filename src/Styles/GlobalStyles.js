@@ -16,6 +16,18 @@ export const SectionBGwarm = styled.div`
 export const ParallaxBG = styled.div`
   ${tw`w-full h-screen object-cover bg-scroll `}
 `
+
+////////////////////////// WRAPPERS NO-BG-COLOR //////////////////////////
+export const WrapperOne = styled.div`
+  ${tw`flex justify-center h-full`}
+`
+export const WrapperTwo = styled.div`
+  ${tw`flex justify-center items-center w-1/3`}
+`
+export const ItemCenter = styled.div`
+  ${tw`flex justify-center items-center`}
+`
+
 ///////////////////////////// NAV COMPONENTS /////////////////////////////
 export const NavContainer = styled.div`
   ${tw`flex flex-col w-full p-10 mx-auto bg-white md:justify-between md:flex-row`}
@@ -93,6 +105,6 @@ export const SmoothRoll = styled.div`
 export const TextANoBG = styled.div`
   ${tw`relative flex items-center justify-center object-fill w-full h-full`}
 `
-export const TextWhite = styled.div`
-  ${tw`absolute text-4xl text-white w-1/2 text-center tracking-wider leading-loose font-millerLight p-4`}
+export const SectionTextWhite = styled.div`
+  ${tw`absolute text-4xl text-white text-center tracking-wider leading-loose font-millerLight p-4`}
 `
