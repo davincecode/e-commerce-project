@@ -22,10 +22,10 @@ export default function index() {
       <div style={styles}>
         <WrapperOne>
           <WrapperTwo>
-            <SectionTextWhite>
+            <SectionTextWhite data-aos="fade">
               CREATING simplicity and positivity through thoughtfully DESIGNED
               SPACES
-              <ItemCenter>
+              <ItemCenter data-aos="fade-up">
                 <a href="#one">
                   <Button>LEARN MORE</Button>
                 </a>

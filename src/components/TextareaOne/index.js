@@ -1,8 +1,9 @@
 import React from "react"
 import {
   SectionBGwarm,
-  SectionText,
+  SectionH2,
   SectionContainer,
+  SectionPadding,
 } from "Styles/GlobalStyles"
 
 export default function index() {
@@ -10,9 +11,12 @@ export default function index() {
     <>
       <SectionBGwarm>
         <SectionContainer>
-          <SectionText>
-            Full-stack web design & planning based in Alberta, Canada.
-          </SectionText>
+          <SectionPadding>
+            <SectionH2 data-aos="fade">
+              Having to with clients on web projects from ideation to launch, I
+              have valuable experience in the design and development process.
+            </SectionH2>
+          </SectionPadding>
         </SectionContainer>
       </SectionBGwarm>
     </>

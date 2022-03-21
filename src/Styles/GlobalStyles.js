@@ -77,13 +77,19 @@ export const CenteredTitle = styled.div`
 
 ////////////////////////////////// SECTIONS //////////////////////////////////
 export const SectionContainer = styled.div`
-  ${tw`flex items-center justify-center w-full h-96`}
+  ${tw`flex items-center justify-center w-full`}
 `
 export const SectionTitle = styled.div`
   ${tw`flex items-center justify-center mt-16 text-3xl font-millerLight`}
 `
-export const SectionText = styled.div`
+export const SectionH1 = styled.div`
   ${tw`flex p-8 text-3xl leading-relaxed tracking-wide text-white font-millerLight`}
+`
+export const SectionH2 = styled.div`
+  ${tw`flex p-8 text-2xl md:text-3xl md:tracking-wide md:leading-loose text-white font-millerLight`}
+`
+export const SectionPadding = styled.div`
+  ${tw`p-8 md:p-24 w-3/4`}
 `
 //this requires CenteredTitle
 export const DivColumn = styled.div`

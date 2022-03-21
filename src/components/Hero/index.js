@@ -5,10 +5,8 @@ export default function Index() {
   return (
     <>
       <HeroContainer>
-        <HeroElements>
-          <div className="">
-            <img className="w-[450px]" src="/images/pillow.jpg" />
-          </div>
+        <HeroElements data-aos="fade">
+          <img className="w-[450px]" src="/images/pillow.jpg" />
           <div className="flex-wrap items-center justify-center w-full py-4 mt-12 text-3xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose ">
             Full-stack web designs focused on{" "}
             <div>
