@@ -16,7 +16,9 @@ const index = () => {
               <span className=" font-millerItalic">Simplicity</span> and
               <span className=" font-millerItalic"> Function.</span>
             </div>
-            <Button>LEARN MORE</Button>
+            <a href="#one">
+              <Button>LEARN MORE</Button>
+            </a>
           </div>
           {/* <img
             className="w-[450px] absolute right-8 top-2/4"

@@ -4,7 +4,9 @@ import React from "react"
 export default function index() {
   return (
     <>
-      <div className=""></div>
+      <section id="one">
+        <div className=""></div>
+      </section>
     </>
   )
 }
