@@ -7,6 +7,7 @@ import tw from "twin.macro"
 export const FullContainer = styled.div`
   ${tw``}
 `
+
 export const SectionBGcool = styled.div`
   ${tw`bg-[#e0e4e3]`}
 `
@@ -114,3 +115,5 @@ export const TextANoBG = styled.div`
 export const SectionTextWhite = styled.div`
   ${tw`absolute text-4xl text-white text-center tracking-wider leading-loose font-millerLight p-4`}
 `
+
+/////////////////////////////////////// FOOTER ///////////////////////////////////
