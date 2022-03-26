@@ -1,59 +1,116 @@
 import React from "react"
+import axios from "axios"
 
-export default function contact() {
-  return (
-    <>
-      <div className="w-full">
-        <div className="bg-gradient-to-b bg-[#a19283] h-96"></div>
-        <div className="max-w-5xl px-6 mx-auto mb-12 sm:px-6 lg:px-8">
-          <div className="w-full p-8 bg-white rounded shadow sm:p-12 -mt-72">
-            <p className="text-3xl font-bold leading-7 text-center">
-              Contact me
+class Contact extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+      disabled: false,
+      emailSent: null,
+    }
+  }
+
+  handleChange = (event) => {
+    const target = event.target
+    const value = target.type === "checkbox" ? target.checked : target.value
+    const name = target.name
+
+    this.setState({
+      [name]: value,
+    })
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+
+    this.setState({
+      disabled: true,
+    })
+
+    axios.post("/api/email", this.state).then((res) => {
+      if (res.data.success) {
+        this.setState({
+          disabled: false,
+          emailSent: true,
+        })
+      } else {
+        this.setState({
+          disabled: false,
+          emailSent: false,
+        })
+      }
+    })
+  }
+
+  render() {
+    return (
+      <>
+        <div className="contact-container">
+          <div className="contact-header">
+            <h1>Contact</h1>
+            <p>
+              If you have any questions, feel free to contact me. I am always
+              looking for new opportunities to work with.
             </p>
-            <form action="" method="post">
-              <div className="items-center mt-12 md:flex">
-                <div className="flex flex-col w-full md:w-1/2">
-                  <label className="font-semibold leading-none">Name</label>
-                  <input
-                    type="text"
-                    className="p-3 mt-4 leading-none text-gray-900 bg-gray-100 border border-gray-200 rounded focus:outline-none focus:border-gray-700"
-                  />
-                </div>
-                <div className="flex flex-col w-full mt-4 md:w-1/2 md:ml-6 md:mt-0">
-                  <label className="font-semibold leading-none">Phone</label>
-                  <input
-                    type="email"
-                    className="p-3 mt-4 leading-none text-gray-900 bg-gray-100 border border-gray-200 rounded focus:outline-none focus:border-gray-700"
-                  />
-                </div>
+          </div>
+          <div className="contact-form">
+            <form onSubmit={this.handleSubmit}>
+              <div className="">
+                <label htmlFor="name">Name</label>
+                <input
+                  className=""
+                  type="text"
+                  name="name"
+                  id="name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                />
               </div>
-              <div className="items-center mt-8 md:flex">
-                <div className="flex flex-col w-full">
-                  <label className="font-semibold leading-none">Subject</label>
-                  <input
-                    type="text"
-                    className="p-3 mt-4 leading-none text-gray-900 bg-gray-100 border border-gray-200 rounded focus:outline-none focus:border-gray-700"
-                  />
-                </div>
+              <div className="">
+                <label htmlFor="email">Email</label>
+                <input
+                  className=""
+                  type="email"
+                  name="email"
+                  id="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
               </div>
-              <div>
-                <div className="flex flex-col w-full mt-8">
-                  <label className="font-semibold leading-none">Message</label>
-                  <textarea
-                    type="text"
-                    className="h-40 p-3 mt-4 text-base leading-none text-gray-900 bg-gray-100 border border-gray-200 rounded focus:oultine-none focus:border-gray-400"
-                  ></textarea>
-                </div>
+              <div className="">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  className=""
+                  id="message"
+                  name="message"
+                  rows="3"
+                  value={this.state.message}
+                  onChange={this.handleChange}
+                ></textarea>
               </div>
-              <div className="flex items-center justify-center w-full">
-                <button className="px-10 py-4 font-semibold leading-none text-white bg-gray-700 rounded mt-9 hover:bg-gray-600 focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 focus:outline-none">
-                  Send message
-                </button>
-              </div>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={this.state.disabled}
+              >
+                Submit
+              </button>
+
+              {this.state.emailSent === true && (
+                <p className="email-sent">Email Sent</p>
+              )}
+              {this.state.emailSent === false && (
+                <p className="email-not-sent">Email Not Sent</p>
+              )}
             </form>
           </div>
         </div>
-      </div>
-    </>
-  )
+      </>
+    )
+  }
 }
+
+export default Contact
