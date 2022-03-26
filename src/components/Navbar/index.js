@@ -7,7 +7,9 @@ const index = () => {
   return (
     <>
       <NavContainer>
-        <LeftNav>XVIEW COLLECTIVE</LeftNav>
+        <LeftNav>
+          <Link to="/">XVIEW COLLECTIVE</Link>
+        </LeftNav>
         <RigthNav>
           <NavLinks>
             <Link to="/about">ABOUT</Link>
