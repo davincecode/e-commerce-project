@@ -13,6 +13,8 @@ import "index.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import About from "pages/About"
 import Latest from "pages/Latest"
+import Shop from "pages/Shop"
+import Contact from "pages/Contact"
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +27,8 @@ const App = () => {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/latest" element={<Latest />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
       <Hero />
