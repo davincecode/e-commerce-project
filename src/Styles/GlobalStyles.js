@@ -7,12 +7,14 @@ import tw from "twin.macro"
 export const FullContainer = styled.div`
   ${tw``}
 `
-
 export const SectionBGcool = styled.div`
   ${tw`bg-[#e0e4e3]`}
 `
 export const SectionBGwarm = styled.div`
   ${tw`bg-[#a19183]`}
+`
+export const SectionBGneutral = styled.div`
+  ${tw`bg-[#efede8]`}
 `
 export const ParallaxBG = styled.div`
   ${tw`w-full h-screen object-cover bg-scroll `}
@@ -89,6 +91,9 @@ export const SectionH1 = styled.div`
 export const SectionH2 = styled.div`
   ${tw`flex md:p-8 text-2xl text-center md:text-3xl md:tracking-wide md:leading-loose text-white font-millerLight`}
 `
+export const SectionP = styled.div`
+  ${tw`flex p-4 md:p-8 text-lg text-center md:text-lg md:tracking-wide md:leading-loose font-millerLight`}
+`
 export const SectionPadding = styled.div`
   ${tw` py-20 md:p-24 w-3/4`}
 `
@@ -99,7 +104,7 @@ export const DivColumn = styled.div`
 
 //////////////////////////////////// BUTTONS //////////////////////////////////
 export const Button = styled.div`
-  ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-white bg-black font-millerLight`}
+  ${tw`flex justify-center w-56 p-4 mt-10 text-sm text-white bg-black font-millerLight cursor-pointer`}
 `
 
 //////////////////////////////////// TEXTAREA //////////////////////////////////
@@ -116,4 +121,4 @@ export const SectionTextWhite = styled.div`
   ${tw`absolute text-4xl text-white text-center tracking-wider leading-loose font-millerLight p-4`}
 `
 
-/////////////////////////////////////// FOOTER ///////////////////////////////////
+//////////////////////////////////// MOBILE  ////////////////////////////////////
