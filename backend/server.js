@@ -27,7 +27,7 @@ app.get("/api", (req, res) => {
 app.post("/api/email", (req, res) => {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
-    to: "vncntybnz@gmail.com",
+    to: "info@vincentybanez.com",
     from: req.body.email,
     subject: "davincecode website",
     text: req.body.message,
