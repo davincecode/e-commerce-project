@@ -19,8 +19,6 @@ class Contact extends Component {
       emailSent: null,
     }
   }
-
-  
   
     handleChange = (event) => {
     // save the target object for future reference
