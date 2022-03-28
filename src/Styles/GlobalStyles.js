@@ -53,7 +53,7 @@ export const HeroContainer = styled.div`
   ${tw`w-full flex flex-col bg-[#eeede8]`}
 `
 export const HeroElements = styled.div`
-  ${tw`flex flex-col h-[100vh] md:h-[88vh] items-center content-center justify-center md:flex-row md:space-x-9`}
+  ${tw`flex flex-col h-[100vh] md:h-[88vh] items-center content-start  md:justify-center md:flex-row md:space-x-9`}
 `
 
 ///////////////////////////// FEATURE COMPONENTS /////////////////////////////
