@@ -5,9 +5,9 @@ export default function Index() {
   return (
     <>
       <HeroContainer>
-        <HeroElements data-aos="fade">
-          <img className="w-[450px]" src="/images/pillow.jpg" />
-          <div className="flex-wrap items-center justify-center w-full py-4 mt-12 text-3xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose ">
+        <HeroElements>
+          <img className="w-[450px]" src="/images/pillow.jpg" data-aos="fade"/>
+          <div className="flex-wrap items-center justify-center w-full py-4 mt-12 text-3xl tracking-wide md:w-2/5 md:text-4xl font-millerLight md:leading-loose " data-aos="fade-left">
             Full-stack web designs focused on{" "}
             <div>
               <span className=" font-millerItalic">Simplicity</span> and

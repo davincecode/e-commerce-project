@@ -12,7 +12,7 @@ export default function index() {
       <SectionBGwarm>
         <SectionContainer>
           <SectionPadding>
-            <SectionH2 data-aos="fade">
+            <SectionH2 data-aos="fade-up">
               Having to with clients on web projects from ideation to launch, I
               have valuable experience in the design and development process.
             </SectionH2>
