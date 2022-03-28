@@ -14,7 +14,6 @@ export default function index() {
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    height: "80vh",
   }
 
   return (

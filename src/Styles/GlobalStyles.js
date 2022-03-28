@@ -22,10 +22,10 @@ export const ParallaxBG = styled.div`
 
 ////////////////////////// WRAPPERS NO-BG-COLOR //////////////////////////
 export const WrapperOne = styled.div`
-  ${tw`flex justify-center h-full`}
+  ${tw`flex justify-center w-full h-[80vh]`}
 `
 export const WrapperTwo = styled.div`
-  ${tw`flex justify-center items-center w-1/3`}
+  ${tw`flex justify-center items-center`}
 `
 export const ItemCenter = styled.div`
   ${tw`flex justify-center items-center`}
@@ -33,7 +33,7 @@ export const ItemCenter = styled.div`
 
 ///////////////////////////// NAV COMPONENTS /////////////////////////////
 export const NavContainer = styled.div`
-  ${tw`flex flex-col w-full p-10 mx-auto bg-white md:justify-between md:flex-row`}
+  ${tw`flex flex-col w-full md:h-[12vh] p-10 mx-auto bg-white md:justify-between md:flex-row`}
 `
 export const NavLinks = styled.div`
   ${tw`items-center justify-center hidden space-x-16 tracking-widest md:flex`}
@@ -42,18 +42,18 @@ export const MobileLinks = styled.div`
   ${tw`flex flex-col items-center justify-center tracking-widest md:hidden`}
 `
 export const LeftNav = styled.div`
-  ${tw`text-3xl font-millerLight`}
+  ${tw`text-3xl font-millerLight items-center flex justify-center`}
 `
 export const RigthNav = styled.div`
-  ${tw`flex flex-row text-sm font-millerLight`}
+  ${tw`flex flex-row text-sm font-millerLight items-center justify-center`}
 `
 
 ///////////////////////////// HERO COMPONENTS /////////////////////////////
 export const HeroContainer = styled.div`
-  ${tw`w-full px-8 py-16 flex flex-col bg-[#eeede8]`}
+  ${tw`w-full flex flex-col bg-[#eeede8]`}
 `
 export const HeroElements = styled.div`
-  ${tw`flex flex-col items-center content-center justify-center md:flex-row md:space-x-9`}
+  ${tw`flex flex-col h-[100vh] md:h-[88vh] items-center content-center justify-center md:flex-row md:space-x-9`}
 `
 
 ///////////////////////////// FEATURE COMPONENTS /////////////////////////////
@@ -118,7 +118,7 @@ export const TextANoBG = styled.div`
   ${tw`relative flex items-center justify-center object-fill w-full h-full`}
 `
 export const SectionTextWhite = styled.div`
-  ${tw`absolute text-4xl text-white text-center tracking-wider leading-loose font-millerLight p-4`}
+  ${tw`absolute text-3xl text-white text-center tracking-wider leading-loose font-millerLight`}
 `
 
 //////////////////////////////////// MOBILE  ////////////////////////////////////
