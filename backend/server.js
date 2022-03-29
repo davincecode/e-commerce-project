@@ -24,14 +24,26 @@ app.get("/api", (req, res) => {
 })
 
 app.post("/api/email", (req, res) => {
-  const { name, email, message } = req.body
+  const { name, email } = req.body
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
-    to: "vncntybnz@gmail.com",
     from: email,
-    subject: `davincecode contact from ${name}`,
-    text: message,
+    templateId: "d-3baeeecfd1c54928b208e2a77d53b1fe",
+    personalizations: [
+      {
+        to: {
+          name: `${name}`,
+          email: process.env.SENDGRID_EMAIL_RECIPIENT,
+        },
+        dynamic_template_data: {
+          review: {
+            url: "https://davincecode.ca",
+          },
+        },
+      },
+    ],
   }
+
   sgMail
     .send(msg)
     .then(() => {
